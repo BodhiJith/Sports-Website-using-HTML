@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+} 
+
+
+
+.welcome {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    color: rgba(107, 108, 109, 0.979);
+}
+.start{
+    text-align: center;
+    padding-bottom: 30px;
+    border: none;
+    border-radius: 12px;
+    background-size: 300% 100%;
+}
+
+.luck{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+.intro {
+    text-align: left;
+    padding-left: 320px; 
+    font-size: 25px;
+    color:rgb(255, 255, 255);
+}
+
+#button{
+    background-color:rgb(119, 133, 122);
+    border-color:white;
+    color:black;
+    padding: 15px 30px 15px 30px;
+    border-radius: 12px;
+    
+    
+}
+body{
+    background-image: url(QuizStart.jpg);
+    background-repeat:round;
+    margin: 0%;
+} 
+.luck{
+    color:goldenrod;
+}
+
+.background {
+    background-image: url(img/strback.jpg);
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    margin: 0%;
+
+}
+
+
+
+#navbar{
+    padding: 1em;
+    color: rgb(61, 58, 58);
+    background-color: white; 
+    text-align: center;
+    margin: 0%;
+    width: 100%;
+}
+    
+ul{
+    background-color:rgb(255, 255, 255);
+    margin:0px;
+    padding-top: 60px;
+}
+    
+li{
+    display: inline;}
+    
+li a{
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 25px;
+}
+    
+li a:hover{
+    font-size: 250%;
+    text-shadow: 1px 2px rgb(255, 195, 195);
+    line-height: 0%;
+    
+}   
+    
+#sitename{
+    text-align: center;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    font-size: 100px;
+}
+
+.list{
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+}
+
+.img{
+    margin-right: auto; 
+    margin-top: -400px;
+    padding-left: 0px;
+    display: block;
+    width: 20%;
+    opacity: 75%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+footer { 
+    margin-top:0%;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#00008B;
+    text-align: center;
+ }
+ 
+     
+footer a{
+ color:white; 
+}
+footer a:hover{
+    color: black;
+}
+
+
+.social > a {
+   font-size:30px;
+   width:50px;
+   height:50px;
+   line-height:50px;
+   display:inline-block;
+   text-align:center;
+   border-radius:50%;
+   border:1px solid #ccc;
+   margin:0 10px;
+   color:white;
+
+}
+.copyright {
+   margin-top:15px;
+   text-align:center;
+   font-size:18px; 
+   margin-bottom:0;
+}
+.social {
+    text-align:center;
+}
+.pageEditor {
+  text-align:center;
+}
+.question{
+    margin-left: 10px;
+}

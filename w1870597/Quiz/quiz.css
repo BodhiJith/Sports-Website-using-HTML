@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+#topic{
+    color: rgb(241, 7, 7);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 80px;
+
+}
+.background{
+    background-image: url(img/quizstart.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: auto;
+    background-size: cover;
+
+}
+.body{
+    color: black;
+    background-color: aquamarine;
+    width: 100px;
+    margin-top: 25px;
+
+}
+.timer{
+    color: red;
+
+}
+.countdown{
+    text-align: center;
+
+}
+footer { 
+    margin-top:0%;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#00008B;
+    text-align: center;
+ }
+ 
+     
+footer a{
+ color:white; 
+}
+footer a:hover{
+    color: black;
+}
+
+
+.social > a {
+   font-size:30px;
+   width:50px;
+   height:50px;
+   line-height:50px;
+   display:inline-block;
+   text-align:center;
+   border-radius:50%;
+   border:1px solid #ccc;
+   margin:0 10px;
+   color:white;
+
+}
+.copyright {
+   margin-top:15px;
+   text-align:center;
+   font-size:18px; 
+   margin-bottom:0;
+}
+.social {
+    text-align:center;
+}
+.pageEditor {
+  text-align:center;
+}
+.question{
+    margin-left: 10px;
+}
+
+.InputStyle{
+    margin-left: 20px;
+}
+
+.submitnew{
+    margin-left: 250px;
+    margin-bottom: 10px;
+}
+
+.submitscore{
+    margin-left: 0px;
+    
+}
+
+.img{
+    margin-right: auto; 
+    margin-top: -300px;
+    padding-left: 0px;
+    display: block;
+    width: 20%;
+    opacity: 75%;
+}
