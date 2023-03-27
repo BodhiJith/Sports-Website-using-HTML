@@ -1,0 +1,37 @@
+h1{
+	position: relative;
+	color:#3678DA;
+	font-family: 'Lobster', cursive;
+	font-size:200px;
+	text-shadow: 8px 12px white;
+	text-align:center;
+	bottom:320px;
+	left:40px;
+}
+
+.names{
+	position: relative;
+	color:black;
+	background-color:#B482E6;
+	font-family:PMingLiU-ExtB;
+	font-size:34px;
+	border:4px solid #B5840B;
+	bottom:400px;
+	left:360px;
+	padding-top:40px;
+	padding-bottom:40px;
+	padding-right:10px;
+	border-radius: 12px;
+	padding:16px;	
+	width:600px;
+}
+body {
+	background-image: url('sandro.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.logo{
+	position: relative;
+	top:0px;
+	left:-40px;
+}

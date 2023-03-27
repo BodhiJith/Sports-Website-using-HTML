@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body{
+   background-color:black;
+}
+
+.bg{
+    background-image: url("Pics/Sportss.jpg");
+    height: 150vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+.sitemap{
+	width:fit-content;
+	height:480px;
+	margin:auto;
+}
+
+svg{
+	margin:auto;
+}
+
+.values{
+	height:90%;
+}
+line{
+	stroke:white;
+	stroke-width:4;
+}	
+
+.reclass rect{
+	fill:white;
+}
+
+.reclass:hover rect{
+	fill:#C0C0C0;
+	cursor:pointer;
+}
+
+.text{
+	font-weight:600;
+	font-size: 17px;
+
+}
+
+.text:hover{
+	cursor: pointer;
+}
+
+footer {
+	position:relative ;
+	background:#111 ;
+	bottom: 0;
+	left: 0;
+	right: 0;    
+	height: auto;
+	width: 100%;
+	font-family: arial;
+	padding-top: 20px;
+	color: #fff;   
+}
+.footer-content{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+.footer-content h3{
+	font-size: 1.8rem;
+	font-weight: 400;
+	text-transform: capitalize;
+	line-height: 1rem;
+}
+.footer-content p{
+	max-width: 500px;
+	margin: 10px auto;
+	line-height: 28px;
+	font-size: 14px;
+}
+.socials{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem 0 1rem 0;    
+}
+.socials li{
+	margin: 0 10px;
+}
+.socials a{
+	text-decoration: none;
+	color: #fff;
+}
+.socials a i{
+	font-size: 1.1rem;
+	
+}
+.socials a:hover i{
+	color: aqua;
+}
+.footer-bottom{
+	background: #000;
+	width: 100vw;
+	padding: 10px 0;
+	text-align: center;
+}
+.copyright {
+ margin-top:15px;
+ text-align:center;
+ font-size:13px; 
+ margin-bottom:0;
+}
