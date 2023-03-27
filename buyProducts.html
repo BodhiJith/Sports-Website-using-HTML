@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Order Here</title>
+		<link rel="stylesheet" href="w1867201/external.css">
+		<link rel="stylesheet" href="w1867215/MyCSS/buyProducts.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		
+	</head>
+	<body>
+	
+	
+				<!--header-->   
+		<nav>
+			<img src="w1867215/MyImages/logo.png" class="logo" alt="Logo" id="logo">
+			<ul>
+				<li><a href="Main_Page.html">Home</a></li>
+				<li><a href="startquiz.html">Quiz</a></li>
+				<li><a href="Thumbnail.html">Gallery</a></li>
+				<li><a href="buyProducts.html">Products</a></li>
+				<li><a href="Query_Form.html">Query Page</a></li>
+				<li><a href="Sitemap.html">Sitemap</a></li>
+				<li><a href="detais.html">Student Details</a></li>
+			</ul>
+		</nav>
+
+		<div class="container">
+		
+			<h1 id ="idb">Sport Ace</h1>
+			
+						
+							<!-- This is picture of cricket balls -->
+							
+		
+			<div class="cricket">	
+				<div class ="product" id="productc1">
+					
+						<div class="img1"><img src="w1867215/MyImages/pink.jpg" alt="Pink Cricket Ball" height="260" width="180"/></div>
+							
+						<div class="description">
+							<h3>Pink Cricket Ball</h3><br/>
+							
+							<div class="price"> $6.91</div>
+
+						</div>
+				</div>
+					
+				<div class="product" id="productc2">
+					
+					<div class="img1"><img src="w1867215/MyImages/red.jpg" alt="Red Cricket Ball" height="260" width="180"/></div>
+					
+					<div class="description">
+						<h3>Red Cricket Ball</h3><br/>
+							
+						<div class="price"> $7.08</div>
+					</div>
+				</div>
+					
+				<div class="product" id="productc3">
+					
+					<div class="img1"><img src="w1867215/MyImages/white.jpg" alt="White Cricket Ball" height="260" width="180"/></div>
+					
+						<div class="description">
+							<h3>White Cricket Ball</h3><br/>
+							<div class="price"> $7.35</div>
+			
+						</div>
+					
+				</div>
+					
+				<div class="product" id="productc4">
+					
+					<div class="img1"><img src="w1867215/MyImages/orange.jpg" alt="Orange Cricket Ball" height="260" width="180"/></div>
+					
+						<div class="description">
+							<h3>Orange Cricket Ball</h3><br/>
+							<div class="price"> $7.61</div>
+		
+						</div>
+				</div>
+			</div>	
+			
+			
+			<!-- This is personal details -->
+			
+		
+			<div class="labelOrder">
+				Your Order:
+				
+				<div class ="product" id="order">
+
+					<label for="fname">Full Name:</label><br>
+					<input type="text" id="fname" name="fname" placeholder="Enter you nqme">	
+					<br><br>
+					
+					<label for="email">Email Address:</label><br>
+					<input type="email" id="email" name="email" placeholder="Enter you email">	
+					<br><br>
+					
+					
+					<label for="quantity">Quantity:</label>
+					<input type="number" id="quantity" name="quantity"  min="0" max="10">
+					<br><br>
+					
+					
+					<label for="address">Address:</label><br>
+					<input type="text" id="address" name="address" placeholder="Enter you delivary address">	
+					<br><br>
+					
+					<label for="tel">Mobile Number: </label><br>
+					<input type="tel" id="tel" name="tel" placeholder="Enter your Mobile Number">	
+					<br><br>
+					
+										
+						<!-- This is where print summary of order -->
+					
+					Invoice Details<br>
+					...............<br>
+					
+					<label for="summary" id="id1">summary of your order</label>
+					<textarea name="summary" id="summary" rows="14" cols="26">
+					</textarea>
+					
+						<!-- button of place order -->
+					
+					<button class="button1" onclick="getbill()">Place Order</button>
+					
+				</div>
+			</div>
+			
+				<!-- select option for cricketballs -->
+			
+			
+			<div class="orderStyle">
+				<form name="order" id="Order" onReset="resetOrder()">        
+								
+					<!-- radio buttons for select items			 -->
+				
+				<label for="pink">Pink</label>
+				<input type="radio" name="ball" id="pink" value="pink">
+				<label for="red">Red</label>
+				<input type="radio" name="ball" id="red" value="red">
+				<label for="white">White</label>
+				<input type="radio" name="ball" id="white" value="red">
+				<label for="orange">Orange</label>
+				<input type="radio" name="ball" id="orange" value="orange">
+				
+				
+					
+				
+					<!-- button for reset -->
+
+				<button class="button2" onclick="resetOrder()">Reset</button>
+
+				</form>	
+			</div>	
+			
+						<!-- This is picture of footballs balls-->
+						
+						
+			<div class="football">			
+
+				<div class ="product" id="productf1">
+					
+						<div class="img1"><img src="w1867215/MyImages/f1.jpg" alt="Outdoor Sport Sccer Ball" height="260" width="180"/></div>
+							
+						<div class="description">
+							<h3>Outdoor Sport Sccer Ball</h3><br/>
+							
+							<div class="price"> $7</div>
+
+						</div>
+				</div>
+					
+				<div class="product" id="productf2">
+					
+					<div class="img1"><img src="w1867215/MyImages/f2.jpg" alt="Fast Delivery Football Ball" height="260" width="180"/></div>
+					
+					<div class="description">
+						<h3>Fast Delivery Football Ball</h3><br/>
+							
+						<div class="price"> $3</div>
+					</div>
+				</div>
+					
+				<div class="product" id="productf3">
+					
+					<div class="img1"><img src="w1867215/MyImages/f3.jpg" alt="High Quality Soccer Ball" height="260" width="180"/></div>
+					
+						<div class="description">
+							<h3>High Quality Soccer Ball</h3><br/>
+							<div class="price"> $4.50</div>
+			
+						</div>
+					
+				</div>
+					
+				<div class="product" id="productf4">
+					
+					<div class="img1"><img src="w1867215/MyImages/f4.jpg" alt="Tranining Soccer Ball" height="260" width="180"/></div>
+					
+						<div class="description">
+							<h3>Tranining Soccer Ball</h3><br/>
+							<div class="price"> $0.30</div>
+		
+						</div>
+				</div>
+			</div>	img1
+			
+			<!-- select option for football balls -->
+			
+			
+			<div class="orderStyle2">
+						
+				<form name="order" id="Orderfootball" onReset="resetOrder()">
+				
+				<!-- radio buttons for select items			 -->
+								
+				<label for="outdoor">outdoor</label>
+				<input type="radio" name="fball" id="outdoor" value="outdoor">
+				<label for="fastball">fastball</label>
+				<input type="radio" name="fball" id="fastball" value="fastball">
+				<label for="qualityball">qualityball</label>
+				<input type="radio" name="fball" id="qualityball" value="qualityball">
+				<label for="traningball">traningball</label>
+				<input type="radio" name="fball" id="traningball" value="traningball">
+				
+				
+				</form>	
+			</div>
+			
+			
+						<!-- This is picture of shoes -->
+
+			
+			<div class="shoes">	
+				<div class ="product" id="products1">
+					
+						<div class="img1"><img src="w1867215/MyImages/s1.jpg" alt="Goobon Air Shoes" height="260" width="180"/></div>
+							
+						<div class="description">
+							<h3>Goobon Air Shoes</h3><br/>
+							
+							<div class="price"> $42</div>
+
+						</div>
+				</div>
+					
+				<div class="product" id="products2">
+					
+					<div class="img1"><img src="w1867215/MyImages/s2.jpg" alt="WXQ Running Shoes" height="260" width="180"/></div>
+					
+					<div class="description">
+						<h3>WXQ Running Shoes</h3><br/>
+							
+						<div class="price"> $19</div>
+					</div>
+				</div>
+					
+				<div class="product" id="products3">
+					
+					<div class="img1"><img src="w1867215/MyImages/s3.jpg" alt="TSIODFO Men Sport shoes" height="260" width="180"/></div>
+					
+						<div class="description">
+							<h3>TSIODFO Men Sport shoes</h3><br/>
+							<div class="price"> $36</div>
+			
+						</div>
+					
+				</div>
+					
+				<div class="product" id="products4">
+					
+					<div class="img1"><img src="w1867215/MyImages/s4.jpg" alt="Slip on Walking Shoes" height="260" width="180"/></div>
+					
+						<div class="description">
+							<h3>Slip on Walking Shoes</h3><br/>
+							<div class="price"> $17</div>
+		
+						</div>
+				</div>
+			</div>	
+			
+			<!-- select option for shoes -->
+			
+			
+			<div class="orderStyle3">
+				<form name="order" id="OrderShoes" onReset="resetOrder()">
+				
+					<!-- radio buttons for select items			 -->
+				
+				
+				<label for="GoobonAir">Goobon Shoes</label>
+				<input type="radio" name="shoes" id="GoobonAir" value="Goobon Air Shoes">
+				<label for="WXQRunning">WXQ Shoes</label>
+				<input type="radio" name="shoes" id="WXQRunning" value="WXQ Running Shoes">
+				<label for="TSIODFO">TSIODFO shoes</label>
+				<input type="radio" name="shoes" id="TSIODFO" value="TSIODFO Men Sport shoes">
+				<label for="SlipShoes">Slip Shoes</label>
+				<input type="radio" name="shoes" id="SlipShoes" value="Slip on Walking Shoes">
+				
+				
+				
+				</form>	
+			</div>
+			
+			<!-- back to top icon -->
+			
+			<div class="backtTop">
+				<a href="#idb"><img src="w1867215/MyImages/bt2.png" alt="icon for back to top"></a><br/>
+				Back to Top
+			</div>	
+			
+			<!--footer-->
+    
+			
+				<footer>
+				   <br><br>
+				   <div class="social">
+				   <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+				   <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+				   <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+				   <a href="https://lk.linkedin.com"><i class="fa fa-linkedin"></i></a>
+				   <p class="copyright">SPORTS ACE ©️ 2022</p>
+				   <br>
+				   </div>
+				   <div class ="pageEditor"><a href="Student1.html"  id="PageEditor" style="text-decoration:none;color : White" >Page Editor</a></div>
+				   <br>
+			   </footer>
+				
+
+						
+		</div>
+		
+
+		
+		<script>
+		
+				<!-- function for items -->
+		
+			function getbill(){
+			
+				<!-- This is contidions for alerts -->
+			
+				if (document.getElementById('quantity').value == 0){
+					alert('please chose quantity.');
+				}else if(document.getElementById('fname').value ==''){
+					alert('please enter your name.');
+				}else if(document.getElementById('email').value==''){
+					alert('please enter your email.');
+				}else if(document.getElementById('address').value==''){
+					alert('please enter your address.');
+				}else if(document.getElementById('tel').value==''){
+					alert('please enter your mobile number.');
+				}else {
+
+					<!-- This is code for get values from radio buttons(cricketballs) -->
+				
+					var red = document.getElementById("red");
+					var white = document.getElementById("white");
+					var pink = document.getElementById("pink");
+					var orange = document.getElementById("orange");
+					
+					<!-- This is code for get values from radio buttons(football balls) -->
+					
+					var outdoor = document.getElementById("outdoor");
+					var fastball = document.getElementById("fastball");
+					var qualityball = document.getElementById("qualityball");
+					var traningball = document.getElementById("traningball");
+					
+					<!-- This is code for get values from radio buttons(shoes) -->
+					
+					var Goobon = document.getElementById("GoobonAir");
+					var WXQ = document.getElementById("WXQRunning");
+					var TSIODFO = document.getElementById("TSIODFO");
+					var Slip = document.getElementById("SlipShoes");
+					
+					
+					if(red.checked==true){
+						var total= 7.08;
+					}else if(white.checked==true){
+						var total= 7.35;
+					}else if(pink.checked==true){
+						var total= 6.91;
+					}else if(orange.checked==true){
+						var total= 7.61;
+					}else if(outdoor.checked==true){
+						var total= 7;
+					}else if(fastball.checked==true){
+						var total= 3;
+					}else if(qualityball.checked==true){
+						var total= 4.50;
+					}else if(traningball.checked==true){
+						var total= 0.30;
+					}else if(Goobon.checked==true){
+						var total= 42;
+					}else if(WXQ.checked==true){
+						var total= 19;
+					}else if(TSIODFO.checked==true){
+						var total= 36;
+					}else if(Slip.checked==true){
+						var total= 17;			
+					}else{
+						alert('Please chose product');
+						var total=o;
+					}	
+					
+						<!-- Code for print summary of order -->
+					
+					var total = total*document.getElementById('quantity').value;
+					document.getElementById('summary').innerHTML="Name : " +document.getElementById('fname').value + 
+					"\nEmail : " +document.getElementById('email').value  +  "\nQuantity : " +document.getElementById('quantity').value 
+					+   "\nAddress : " + document.getElementById('address').value  +    "\nTelephone no. : " + document.getElementById('tel').value  
+					+ "\nOrder Total :- " +total + "$." + "\n\nThank For Shopping.";
+			
+				}
+				
+				
+			}
+					
+		</script>
+	
+	
+	</body>
+</html>

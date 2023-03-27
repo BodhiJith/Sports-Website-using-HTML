@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Thumbnails</title>
+        <link rel="stylesheet" type="text/css" href="w1867201/external.css">
+        <link rel="stylesheet" type="text/css" href="w1870576/Thumbnail.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <nav>
+	        <img src="img/logo3.png" class="logo" alt="Logo" id="logo">
+
+	        <ul>
+                <li><a href="Main_Page.html">Home</a></li>
+                <li><a href="startquiz.html">Quiz</a></li>
+                <li><a href="Thumbnail.html">Gallery</a></li>
+                <li><a href="buyProducts.html">Products</a></li>
+                <li><a href="Query_Form.html">Query Page</a></li>
+                <li><a href="Sitemap.html">Sitemap</a></li>
+                <li><a href="detais.html">Student Details</a></li>
+	        </ul>
+	    </nav>
+        <br> <br>
+        <div id="color">
+            <div class="bgcolorchange">
+                <label for="background" id="lable1">Background  color</label>
+                <select id="background" onchange="selectbgcolor(this.form)">
+                    <option value="Black">Black</option>
+					<option value="White">White</option>
+					<option value="Red">Red</option>
+					<option value="Blue">Blue</option>
+                    <option value="Green">Green</option>
+					
+                </select>
+            </div>
+            <div class="txtcolorchange">
+                <label for="text" id="lable2">Text color</label>
+                <select id="text" onchange="selecttextcolor(this.form)">
+                    <option value="White">White</option>
+					<option value="Black">Black</option>
+					<option value="Red">Red</option>
+					<option value="Blue">Blue</option>
+					<option value="Green">Green</option>
+                </select>
+            </div>
+
+            <h1 class="heading" id="heading">Gallery</h1>
+
+            <div class="gallery">
+                <img src="w1870576/Pics/basket-ball.png" alt="basketball" id="basketball" width=50 height=180 />
+                <img src="w1870576/Pics/cricket.jpg" alt="cricket" id="cricket" width=50 height=180 />
+                <img src="w1870576/Pics/Rugby.jpg" alt="rugby" id="rugby" width=50 height=180 />
+                <img src="w1870576/Pics/soccer.jpg" alt="soccer" id="soccer" width=50 height=180 />
+                <img src="w1870576/Pics/badminton_.jpg" alt="badminton" id="badminton" width=50 height=180 />
+            </div>
+
+            <div class="pre" id="pre">
+                <img src="w1870576/Pics/Basketball.jpg" alt="basketball" id="imagepreview" />
+                <div class="closepre" onclick="preclose()"> X </div>
+                <div id="desc"> </div>
+            </div>
+        </div>
+
+        <script>
+            function getSelectedValue(selectList) {
+                return selectList[selectList.selectedIndex].value;
+            }
+
+            function selectbgcolor(formRef) {
+                var selectedValue = getSelectedValue(background);
+                document.getElementById("color").style.color = "white";
+                switch (selectedValue) {
+                    case "Black":
+                        document.body.style.backgroundColor = "black";
+                        break;
+					case "White":
+                        document.body.style.backgroundColor = "white";
+                        break;
+					case "Red":
+                        document.body.style.backgroundColor = "#cc0000";
+                        break;
+					case "Blue":
+                        document.body.style.backgroundColor = "#3944bc";
+                        break;
+                    case "Green":
+                        document.body.style.backgroundColor = "#008000";
+                        break;        }
+            }
+
+            function selecttextcolor(formRef) {
+                var selectedValue = getSelectedValue(text);
+                document.getElementById("heading").style.color = "white";
+                document.getElementById("desc").style.color = "white";
+                document.getElementById("lable1").style.color = "white";
+                document.getElementById("lable2").style.color = "white";
+                switch (selectedValue) {
+                    case "Black":
+                        document.getElementById("heading").style.color = "black";
+                        document.getElementById("desc").style.color = "black";
+                        document.getElementById("lable1").style.color = "black";
+                        document.getElementById("lable2").style.color = "black";
+                        break;
+					case "White":
+                        document.getElementById("heading").style.color = "white";
+                        document.getElementById("desc").style.color = "white";
+                        document.getElementById("lable1").style.color = "white";
+                        document.getElementById("lable2").style.color = "white";
+                        break;
+					case "Red":
+                        document.getElementById("heading").style.color = "red";
+                        document.getElementById("desc").style.color = "red";
+                        document.getElementById("lable1").style.color = "red";
+                        document.getElementById("lable2").style.color = "red";
+                        break;
+					case "Blue":
+                        document.getElementById("heading").style.color = "#3944bc";
+                        document.getElementById("desc").style.color = "#3944bc";
+                        document.getElementById("lable1").style.color = "#3944bc";
+                        document.getElementById("lable2").style.color = "#3944bc";
+                        break;
+                    case "Green":
+                        document.getElementById("heading").style.color ="#008000";
+                        document.getElementById("desc").style.color = "#008000";
+                        document.getElementById("lable1").style.color = "#008000";
+                        document.getElementById("lable2").style.color = "#008000";
+                        break;         }
+            }
+            var pre = document.getElementById("pre");
+            var imgpre = document.getElementById("imagepreview");
+            var desc = document.getElementById("desc");
+            let gallery = document.querySelectorAll(".gallery > img");
+            const imagdesc = {
+                basketball: "A basketball is a round ball. Basketballs often range in size from little promotional products with only a few inches (centimeters) in diameter to exceptionally big training balls with a diameter of approximately 2 feet (60 cm).Almost all basketballs contain an inner rubber bladder that is inflated and wrapped in layers of fiber before being coated with a surface composed of leather, rubber, or a synthetic composite. There is a tiny hole, like with most inflatable balls, that allows the pressure to be increased or lowered.",
+                cricket: "As cricket is a bat-and-ball sport, the players are required to wear protective equipment to avoid injury. Bat,ball,stumps,cricket kit are the main equipments that the players use while playing the game.A cricket kit is essential equipment for every cricket player who wants to avoid injury. The quality of the equipment and the components utilized for cushioning and player safety should be prioritized. A cricket kit should be chosen according on the player's height, weight, and torso.",
+                rugby: "Rugby is a sport that is played with a rugby ball, which is an extended elliptic ball. World Rugby and the Rugby League International Federation, the governing bodies for both codes, rugby union and rugby league, have determined its dimensions and weight.  The rugby ball is oval in form, has four panels, and weighs around 400 grams. It is frequently mistaken with various football balls of comparable proportions used in the United States, Canada, and Australia.",
+                soccer: "Football is used in soccer.The football must be spherical, coated in leather or another appropriate material, and inflated, with a circumference of 27–27.5 inches (68–70 cm) and a weight of 14.5–16 ounces (410–450 kg). Because older balls typically grew much heavier during a match played in rainy conditions, the weight stated for a ball is the dry weight. Training footballs, match footballs, professional match footballs, beach footballs, street footballs, indoor footballs, turf balls, futsal footballs, and mini/skills footballs are among the several sorts of football balls available, depending on the match and turf.",
+                badminton: "Badminton racket and a shuttlecock is mainly used when playing Badminton. Modern badminton rackets are extremely light, weighing no more than 100 grams. Racket frames can be built of conventional metals like as steel or aluminum. Alloys, strong carbon fiber, ceramic, and boron are some of the materials used in rackets. A shuttlecock is made up of sixteen feathers attached to a cork base and wrapped in a thin leather sheet. The best Badminton Shuttlecocks are produced from goose wing feathers, which is an interesting fact.",
+            };
+
+            gallery.forEach(function (item) {
+                item.addEventListener("mouseover", function () {
+                    pre.style.display = "flex";
+                    imgpre.src = item.src;
+                    desc.innerHTML = imagdesc[item.id];
+                });
+            });
+            function preclose() {
+                pre.style.display = "none";
+            }
+        </script>
+        <div id="end"></div>
+		  <footer>
+		  <br> <br>
+	        <div class="footer-content">
+	           <ul class="socials">
+	               <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>  
+	               <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+	               <li><a href="https://accounts.google.com/ServiceLogin?ltmpl=mobNH"><i class="fa fa-google-plus"></i></a></li>
+	               <li><a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+	               <li><a href="https://instagram.com/"><i class="fa fa-instagram"></i></a></li>   
+
+				    
+	           </ul>
+	        </div>
+			<p class="copyright"> SPORTS ACE ©️ 2022 </p>
+	        <a
+                    href="Student4.html"
+                    id="editor"
+                    style="text-decoration: none; color: red"
+                    >Page Editor
+			</a>
+			<br>
+			<a href="#logo" style="text-decoration: none;color : white" >Back to Top</a>
+	      </footer>
+    </body>
+</html>
